@@ -1,8 +1,9 @@
 // services/API.js
 import axios from "axios";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const API = axios.create({
-  baseURL: "https://backend-rohan.onrender.com", // Base URL of your backend
+  baseURL: API_URL, // Base URL of your backend
   timeout: 15000, // Timeout for requests (15 seconds)
 });
 
